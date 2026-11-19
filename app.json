@@ -1,33 +1,43 @@
 {
   "expo": {
-    "name": "starter-kit-expo-uniwind",
+    "name": "Borc İdarəsi",
     "slug": "starter-kit-expo-uniwind",
     "version": "1.0.0",
     "orientation": "portrait",
-    "scheme": "starterkitexpoUniwind",
+    "scheme": "borcvehesabat",
     "userInterfaceStyle": "automatic",
-    "newArchEnabled": true,
-    "splash": {
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
+
     "ios": {
       "supportsTablet": true
     },
+
     "android": {
-      "edgeToEdgeEnabled": true
+      "package": "com.xazar2211.borcvehesabat"
     },
+
     "web": {
       "bundler": "metro",
       "output": "static"
     },
+
     "plugins": [
       "expo-router",
       "expo-font",
-      "@react-native-community/datetimepicker"
+      "@react-native-community/datetimepicker",
+      "expo-sqlite",
+      "expo-secure-store",
+      "expo-sharing"
     ],
+
     "experiments": {
       "typedRoutes": true
+    },
+
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "2521ab2a-a581-4119-8051-fd65107e2d03"
+      }
     }
   }
 }
